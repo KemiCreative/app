@@ -7,6 +7,8 @@ import {
   TouchableHighlight
 } from 'react-native';
 
+import { WebView } from 'react-native-webview';
+
 //import Styles from '../styles/styles';
 export default class HomeScreen extends Component {
   // static navigationOptions = {
@@ -19,7 +21,7 @@ export default class HomeScreen extends Component {
           <TouchableHighlight
             onPress={() => this.props.navigation.navigate('Before')}
           >
-            <View style={{ height: '33.3333%' }}>
+            <View>
               <Image
                 source={{
                   uri:
@@ -37,7 +39,7 @@ export default class HomeScreen extends Component {
           <TouchableHighlight
             onPress={() => this.props.navigation.navigate('During')}
           >
-            <View style={{ height: '33.3333%' }}>
+            <View>
               <Image
                 source={{
                   uri:
@@ -55,7 +57,7 @@ export default class HomeScreen extends Component {
           <TouchableHighlight
             onPress={() => this.props.navigation.navigate('After')}
           >
-            <View style={{ height: '33.3333%' }}>
+            <View>
               <Image
                 source={{
                   uri:
@@ -70,6 +72,12 @@ export default class HomeScreen extends Component {
               />
             </View>
           </TouchableHighlight>
+          <View style={{ height: '100%', width: '100%' }}>
+            <WebView
+              source={{ uri: 'https://github.com/facebook/react-native' }}
+              style={{ marginTop: 20, width: '100%', height: 400 }}
+            />
+          </View>
         </ScrollView>
       </View>
     );
