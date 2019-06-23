@@ -3,7 +3,7 @@ import { View, ScrollView, Text } from 'react-native';
 
 import BlockLink from '../../components/BlockLink';
 
-export default class DetailsScreen extends Component {
+export default class BeforeScreen extends Component {
   static navigationOptions = {
     title: 'Before Live'
   };
@@ -14,7 +14,7 @@ export default class DetailsScreen extends Component {
         <ScrollView>
           <BlockLink
             title="Hey Youth Leaders!"
-            href="Home"
+            href="Hey"
             uri="https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23502661_GBNodeListTemplateTypeVisuels_sectionParams_23893219_cellBackgroundImage@iphone6plus.jpg"
           />
           <View>

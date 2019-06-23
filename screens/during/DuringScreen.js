@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, ScrollView, Text } from 'react-native';
 
-export default class DetailsScreen extends Component {
+class DuringScreen extends Component {
   static navigationOptions = {
     title: 'During Live'
   };
@@ -14,3 +14,5 @@ export default class DetailsScreen extends Component {
     );
   }
 }
+
+export default DuringScreen;

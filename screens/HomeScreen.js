@@ -72,12 +72,6 @@ export default class HomeScreen extends Component {
               />
             </View>
           </TouchableHighlight>
-          <View style={{ height: '100%', width: '100%' }}>
-            <WebView
-              source={{ uri: 'https://github.com/facebook/react-native' }}
-              style={{ marginTop: 20, width: '100%', height: 400 }}
-            />
-          </View>
         </ScrollView>
       </View>
     );

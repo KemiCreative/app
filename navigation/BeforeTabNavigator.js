@@ -7,9 +7,11 @@ import {
 
 import TabBarIcon from '../components/TabBarIcon';
 import BeforeScreen from '../screens/before/BeforeScreen';
+import HeyYouthLeadersScreen from '../screens/before/HeyYouthLeadersScreen';
 
 const BeforeTabNavigator = createStackNavigator({
-  Before: BeforeScreen
+  Test: BeforeScreen,
+  Hey: HeyYouthLeadersScreen
 });
 
 BeforeTabNavigator.navigationOptions = {

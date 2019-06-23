@@ -12,7 +12,11 @@ export default class BlockLink extends Component {
     return (
       <View>
         <TouchableHighlight
-          onPress={() => this.props.navigation.navigate(this.props.href)}
+          onPress={() =>
+            this.props.navigation.navigate({
+              routeName: this.props.href
+            })
+          }
         >
           <ImageBackground
             source={{
@@ -25,6 +29,7 @@ export default class BlockLink extends Component {
             }}
           >
             <Text>{this.props.title}</Text>
+            <Text>{this.props.href}</Text>
           </ImageBackground>
         </TouchableHighlight>
       </View>
