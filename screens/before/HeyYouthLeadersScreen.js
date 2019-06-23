@@ -10,6 +10,10 @@ export default class DetailsScreen extends Component {
     return (
       <View>
         <Text>Hey Youth Leaders!</Text>
+        <Text>
+          Check out this video from Greg Stier to get you and your students
+          ready for Dare 2 Share LIVE.
+        </Text>
       </View>
     );
   }
