@@ -1,0 +1,83 @@
+import React, { Component } from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  AppRegistry,
+  Image,
+  ScrollView,
+  TouchableHighlight,
+  Button
+} from 'react-native';
+//import Styles from '../styles/styles';
+    'https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23334215_elements_152964102944_cellBackgroundImage@tablet.jpg?v=1531461658'
+};
+let during = {
+  uri:
+    'https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23334215_elements_152964127824_cellBackgroundImage@tablet.jpg?v=1531461677'
+};
+let after = {
+  uri:
+    'https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23334215_elements_152964169985_cellBackgroundImage@tablet.jpg?v=1531461699'
+};
+export default function HomeScreen() {
+  // static navigationOptions = {
+  //   headerStyle: {
+  //     backgroundColor: '#0033A0',
+  //     color: '#ffffff'
+  //   },
+  //   headerTitle: <LogoTitle />,
+  //   headerRight: (
+  //     <Button
+  //       onPress={() => alert('This is a button!')}
+  //       title="Info"
+  //       color="#fff"
+  //     />
+  //   )
+  // };
+
+  return (
+    <View style={{ backgroundColor: '#0033A0' }}>
+      <ScrollView>
+        <TouchableHighlight
+          onPress={() => {
+            /* 1. Navigate to the Details route with params */
+            this.props.navigation.navigate('Details', {
+              itemId: 86,
+              otherParam: 'anything you want here'
+            });
+          }}
+        >
+          <Image
+            source={before}
+            style={{
+              width: 1536,
+              height: 250,
+              maxWidth: '100%',
+              resizeMode: 'contain'
+            }}
+          />
+        </TouchableHighlight>
+
+        <Image
+          source={during}
+          style={{
+            width: 1536,
+            height: 250,
+            maxWidth: '100%',
+            resizeMode: 'contain'
+          }}
+        />
+        <Image
+          source={after}
+          style={{
+            width: 1536,
+            height: 250,
+            maxWidth: '100%',
+            resizeMode: 'contain'
+          }}
+        />
+      </ScrollView>
+    </View>
+  );
+}
