@@ -1,5 +1,6 @@
 import React from 'react';
 import { Platform } from 'react-native';
+
 import {
   createStackNavigator,
   createBottomTabNavigator
@@ -8,24 +9,12 @@ import {
 import TabBarIcon from '../components/TabBarIcon';
 import BeforeScreen from '../screens/before/BeforeScreen';
 import HeyYouthLeadersScreen from '../screens/before/HeyYouthLeadersScreen';
+import PushNotifications from '../screens/before/PushNotifications';
 
 const BeforeTabNavigator = createStackNavigator({
-  Test: BeforeScreen,
-  Hey: HeyYouthLeadersScreen
+  Before: BeforeScreen,
+  Hey: HeyYouthLeadersScreen,
+  Push: PushNotifications
 });
-
-BeforeTabNavigator.navigationOptions = {
-  tabBarLabel: 'Before',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
-      }
-    />
-  )
-};
 
 export default BeforeTabNavigator;

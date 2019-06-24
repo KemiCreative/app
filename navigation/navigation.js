@@ -22,6 +22,48 @@ HomeScreen.navigationOptions = {
   )
 };
 
+BeforeTabNavigator.navigationOptions = {
+  tabBarLabel: 'Before',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-information-circle${focused ? '' : '-outline'}`
+          : 'md-information-circle'
+      }
+    />
+  )
+};
+
+DuringTabNavigator.navigationOptions = {
+  tabBarLabel: 'During',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-information-circle${focused ? '' : '-outline'}`
+          : 'md-information-circle'
+      }
+    />
+  )
+};
+
+AfterTabNavigator.navigationOptions = {
+  tabBarLabel: 'After',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-information-circle${focused ? '' : '-outline'}`
+          : 'md-information-circle'
+      }
+    />
+  )
+};
+
 const AppNavigator = createBottomTabNavigator(
   {
     Home: HomeScreen,

@@ -7,8 +7,6 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-import { WebView } from 'react-native-webview';
-
 //import Styles from '../styles/styles';
 export default class HomeScreen extends Component {
   // static navigationOptions = {

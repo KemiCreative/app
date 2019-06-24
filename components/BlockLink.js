@@ -6,17 +6,13 @@ import {
   StyleSheet,
   ImageBackground
 } from 'react-native';
-
-export default class BlockLink extends Component {
+import { withNavigation } from 'react-navigation';
+class BlockLink extends Component {
   render() {
     return (
       <View>
         <TouchableHighlight
-          onPress={() =>
-            this.props.navigation.navigate({
-              routeName: this.props.href
-            })
-          }
+          onPress={() => this.props.navigation.navigate(this.props.href)}
         >
           <ImageBackground
             source={{
@@ -42,3 +38,4 @@ const styles = StyleSheet.create({
     width: '100%'
   }
 });
+export default withNavigation(BlockLink);
