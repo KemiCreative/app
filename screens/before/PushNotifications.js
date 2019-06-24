@@ -18,6 +18,7 @@ export default class PushNotifications extends Component {
           freebies leading up to the event to those who have their notifications
           activated!
         </Text>
+        <Text>To enable push notifications on Android:</Text>
       </View>
     );
   }
