@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import { View, ScrollView, Text } from 'react-native'
+import React, { Component } from 'react';
+import { View, ScrollView, Text } from 'react-native';
 
-import { WebView } from 'react-native-webview'
+import { WebView } from 'react-native-webview';
 
 export default class CrashCourse extends Component {
   static navigationOptions = {
     title: 'A 4 Minute Crash Course'
-  }
+  };
 
   render() {
     return (
@@ -15,7 +15,10 @@ export default class CrashCourse extends Component {
         <Text>
           Watch this video to get prepped and ready for Dare 2 Share LIVE!
         </Text>
+        <View>
+          <Text>[4 Minute Crash Course Video Goes Here]</Text>
+        </View>
       </View>
-    )
+    );
   }
 }

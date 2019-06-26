@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import { View, ScrollView, Text } from 'react-native'
+import React, { Component } from 'react';
+import { View, ScrollView, Text } from 'react-native';
 
-import BlockLink from '../../components/BlockLink'
+import BlockLink from '../../components/BlockLink';
 
 export default class BeforeScreen extends Component {
   static navigationOptions = {
     title: 'Before Live'
-  }
+  };
 
   render() {
     return (
@@ -25,12 +25,12 @@ export default class BeforeScreen extends Component {
             />
             <BlockLink
               title="A 4 Minute Crash Course"
-              href="Home"
+              href="CrashCourse"
               uri="https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23502661_GBNodeListTemplateTypeVisuels_sectionParams_23576160_cellBackgroundImage@iphone6plus.jpg"
             />
           </View>
         </ScrollView>
       </View>
-    )
+    );
   }
 }
