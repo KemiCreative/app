@@ -1,12 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   TouchableHighlight,
   Text,
   View,
   StyleSheet,
-  ImageBackground
-} from 'react-native';
-import { withNavigation } from 'react-navigation';
+  ImageBackground,
+  Dimensions
+} from 'react-native'
+import { withNavigation } from 'react-navigation'
+
+const getHeight = () => {
+  const initial = Dimensions.get('window').height - 92
+  return initial / 3
+}
+
 class BlockLink extends Component {
   render() {
     return (
@@ -19,17 +26,28 @@ class BlockLink extends Component {
               uri: this.props.uri
             }}
             style={{
-              height: 250,
+              display: 'flex',
+              height: getHeight(),
               width: '100%',
-              backgroundSize: 'cover'
+              backgroundSize: 'cover',
+              justifyContent: 'center'
             }}
           >
-            <Text>{this.props.title}</Text>
-            <Text>{this.props.href}</Text>
+            <Text
+              style={{
+                color: '#fff',
+                fontWeight: '700',
+                textAlign: 'center',
+                fontSize: 39,
+                textTransform: 'uppercase'
+              }}
+            >
+              {this.props.title}
+            </Text>
           </ImageBackground>
         </TouchableHighlight>
       </View>
-    );
+    )
   }
 }
 const styles = StyleSheet.create({
@@ -37,5 +55,5 @@ const styles = StyleSheet.create({
     height: 250,
     width: '100%'
   }
-});
-export default withNavigation(BlockLink);
+})
+export default withNavigation(BlockLink)
