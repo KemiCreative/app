@@ -8,10 +8,12 @@ import {
 } from 'react-native';
 
 //import Styles from '../styles/styles';
+
 export default class HomeScreen extends Component {
   // static navigationOptions = {
   //   title: 'Home Screen',
   // };
+
   render() {
     return (
       <View style={{ backgroundColor: '#0033A0', height: '100%' }}>
@@ -21,10 +23,7 @@ export default class HomeScreen extends Component {
           >
             <View>
               <Image
-                source={{
-                  uri:
-                    'https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23334215_elements_152964102944_cellBackgroundImage@tablet.jpg?v=1531461658'
-                }}
+                source={require('../assets/images/sections_23334215_elements_152964102944_cellBackgroundImage-tablet.jpg')}
                 style={{
                   width: 1536,
                   height: 250,
@@ -39,10 +38,7 @@ export default class HomeScreen extends Component {
           >
             <View>
               <Image
-                source={{
-                  uri:
-                    'https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23334215_elements_152964127824_cellBackgroundImage@tablet.jpg?v=1531461677'
-                }}
+                source={require('../assets/images/sections_23334215_elements_152964127824_cellBackgroundImage-tablet.jpg')}
                 style={{
                   width: 1536,
                   height: 250,
@@ -57,10 +53,7 @@ export default class HomeScreen extends Component {
           >
             <View>
               <Image
-                source={{
-                  uri:
-                    'https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23334215_elements_152964169985_cellBackgroundImage@tablet.jpg?v=1531461699'
-                }}
+                source={require('../assets/images/sections_23334215_elements_152964169985_cellBackgroundImage-tablet.jpg')}
                 style={{
                   width: 1536,
                   height: 250,

@@ -12,6 +12,12 @@ import ConversationsMap from '../screens/during/ConversationsMap';
 import Outreach from '../screens/during/Outreach';
 import Donate from '../screens/during/Donate';
 import Partners from '../screens/during/Partners';
+import VideoStarters from '../screens/during/ConversationStarters/VideoStarters';
+import PictureStarters from '../screens/during/ConversationStarters/PictureStarters';
+import OnMap from '../screens/during/IJustShared/PutMeOnTheMap';
+import TellUs from '../screens/during/IJustShared/TellUsAboutIt';
+import OutreachScript from '../screens/during/Outreach/OutreachScript';
+import TheGospel from '../screens/during/Outreach/TheGospel';
 
 const DuringTabNavigator = createStackNavigator({
   During: DuringScreen,
@@ -21,7 +27,13 @@ const DuringTabNavigator = createStackNavigator({
   ConversationsMap: ConversationsMap,
   Outreach: Outreach,
   Donate: Donate,
-  PartnersOne: Partners
+  PartnersOne: Partners,
+  VideoStarters: VideoStarters,
+  PictureStarters: PictureStarters,
+  OnMap: OnMap,
+  TellUs: TellUs,
+  OutreachScript: OutreachScript,
+  TheGospel: TheGospel
 });
 
 export default DuringTabNavigator;

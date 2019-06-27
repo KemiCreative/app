@@ -32,6 +32,8 @@ export default class LeadTheCause extends Component {
             width: '100%',
             height: this.state.screenHeight
           }}
+          startInLoadingState={true}
+          renderLoading={() => <Text>Loading...</Text>}
         />
       </View>
     );

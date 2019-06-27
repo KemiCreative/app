@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, ScrollView, Text } from 'react-native';
 
 import BlockLink from '../../components/BlockLink';
-
+import Styles from '../../constants/Styles';
 class DuringScreen extends Component {
   static navigationOptions = {
     title: 'During Live'
@@ -10,7 +10,7 @@ class DuringScreen extends Component {
 
   render() {
     return (
-      <View>
+      <View style={Styles.bg}>
         <ScrollView>
           <BlockLink
             title="Conversation Starters"

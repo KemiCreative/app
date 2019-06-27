@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, ScrollView, Text } from 'react-native';
 
 import BlockLink from '../../components/BlockLink';
-
+import Styles from '../../constants/Styles';
 export default class AfterScreen extends Component {
   static navigationOptions = {
     title: 'After Live'
@@ -10,12 +10,13 @@ export default class AfterScreen extends Component {
 
   render() {
     return (
-      <View>
+      <View style={Styles.bg}>
         <ScrollView>
           <BlockLink
             title="Students - Keep It Going"
             href="Students"
             uri="https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_18038460_GBNodeListTemplateTypeVisuels_sectionParams_23645494_cellBackgroundImage@iphone6plus.jpg"
+            //uri={require('../../assets/images/sections_18038460_GBNodeListTemplateTypeVisuels_sectionParams_23645494_cellBackgroundImage-iphone6plus.jpg')}
           />
           <View>
             <BlockLink

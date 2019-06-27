@@ -11,7 +11,7 @@ export default class Partners extends Component {
   constructor() {
     super();
     this.state = {
-      screenHeight: Math.round(Dimensions.get('window').height) - 112
+      screenHeight: Math.round(Dimensions.get('window').height) - 170
     };
   }
 
@@ -29,6 +29,8 @@ export default class Partners extends Component {
             width: '100%',
             height: this.state.screenHeight
           }}
+          startInLoadingState={true}
+          renderLoading={() => <Text>Loading...</Text>}
         />
       </View>
     );

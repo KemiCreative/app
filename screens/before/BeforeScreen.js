@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, ScrollView, Text } from 'react-native';
 
 import BlockLink from '../../components/BlockLink';
-
+import Styles from '../../constants/Styles';
 export default class BeforeScreen extends Component {
   static navigationOptions = {
     title: 'Before Live'
@@ -10,7 +10,7 @@ export default class BeforeScreen extends Component {
 
   render() {
     return (
-      <View>
+      <View style={Styles.bg}>
         <ScrollView>
           <BlockLink
             title="Hey Youth Leaders!"

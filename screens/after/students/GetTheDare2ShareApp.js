@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Dimensions } from 'react-native';
+import { View, Dimensions, Text } from 'react-native';
 
 import { WebView } from 'react-native-webview';
 
@@ -29,6 +29,8 @@ export default class FinalMessageFromGreg extends Component {
             width: '100%',
             height: this.state.screenHeight
           }}
+          startInLoadingState={true}
+          renderLoading={() => <Text>Loading...</Text>}
         />
       </View>
     );

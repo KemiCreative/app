@@ -45,15 +45,15 @@ class HomeScreen extends Component {
   render() {
     let before = {
       uri:
-        'https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23334215_elements_152964102944_cellBackgroundImage@tablet.jpg?v=1531461658'
+        'root/assets/images/sections_23334215_elements_152964102944_cellBackgroundImage@tablet.jpg'
     };
     let during = {
       uri:
-        'https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23334215_elements_152964127824_cellBackgroundImage@tablet.jpg?v=1531461677'
+        'root/assets/images/sections_23334215_elements_152964127824_cellBackgroundImage@tablet.jpg'
     };
     let after = {
       uri:
-        'https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_23334215_elements_152964169985_cellBackgroundImage@tablet.jpg?v=1531461699'
+        'root/assets/images/sections_23334215_elements_152964169985_cellBackgroundImage@tablet.jpg'
     };
     return (
       <View style={styles.container}>

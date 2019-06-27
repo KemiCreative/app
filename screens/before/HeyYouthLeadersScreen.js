@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { View, ScrollView, Text } from 'react-native';
+import { View, ScrollView, Text, StyleSheet } from 'react-native';
 
 import { WebView } from 'react-native-webview';
 
+import Styles from '../../constants/Styles';
 export default class HeyYouthLeadersScreen extends Component {
   static navigationOptions = {
     title: 'Hey Youth Leaders!'
@@ -10,14 +11,14 @@ export default class HeyYouthLeadersScreen extends Component {
 
   render() {
     return (
-      <View>
-        <Text>Hey Youth Leaders!</Text>
-        <Text>
+      <View style={Styles.container}>
+        <Text style={Styles.heading}>Hey Youth Leaders!</Text>
+        <Text style={Styles.content}>
           Check out this video from Greg Stier to get you and your students
           ready for Dare 2 Share LIVE.
         </Text>
         <View>
-          <Text>[Video From Greg Stier Goes Here]</Text>
+          <Text style={Styles.content}>[Video From Greg Stier Goes Here]</Text>
         </View>
       </View>
     );
