@@ -9,7 +9,8 @@ export default {
     paddingBottom: 40,
     paddingLeft: 20,
     paddingRight: 20,
-    height: '100%'
+    height: '100%',
+    fontFamily: 'Josefin Sans'
   },
   heading: {
     color: '#fff',

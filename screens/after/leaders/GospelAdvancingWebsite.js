@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, Dimensions, Text } from 'react-native';
+import { View, Dimensions, Text, ActivityIndicator } from 'react-native';
 
 import { WebView } from 'react-native-webview';
+import LoadingIcon from '../../../components/Loading';
 
 export default class GospelAdvancingWebsite extends Component {
   static navigationOptions = {
@@ -32,18 +33,7 @@ export default class GospelAdvancingWebsite extends Component {
             height: this.state.screenHeight
           }}
           startInLoadingState={true}
-          renderLoading={() => (
-            <Text
-              style={{
-                flex: 1,
-                justifyContent: 'center',
-                alignContent: 'center',
-                height: '100%'
-              }}
-            >
-              Loading...
-            </Text>
-          )}
+          renderLoading={() => <LoadingIcon />}
         />
       </View>
     );

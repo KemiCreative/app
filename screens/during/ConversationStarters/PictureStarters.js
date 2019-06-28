@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, Dimensions } from 'react-native';
 
 import { WebView } from 'react-native-webview';
-
+import LoadingIcon from '../../../components/Loading';
 export default class PictureStarters extends Component {
   static navigationOptions = {
     title: 'Picture Starters'
@@ -32,7 +32,7 @@ export default class PictureStarters extends Component {
             height: this.state.screenHeight
           }}
           startInLoadingState={true}
-          renderLoading={() => <Text>Loading...</Text>}
+          renderLoading={() => <LoadingIcon />}
         />
       </View>
     );

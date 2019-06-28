@@ -15,12 +15,14 @@ export default class ConversationsStarters extends Component {
           <BlockLink
             title="Video Starters"
             href="VideoStarters"
-            uri="https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_18035843_GBNodeListTemplateTypeVisuels_sectionParams_20462181_cellBackgroundImage@iphone6plus.jpg"
+            uri={require('../../assets/images/sections_18035843_GBNodeListTemplateTypeVisuels_sectionParams_20462181_cellBackgroundImage-iphone6plus.jpg')}
+            //uri="https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_18035843_GBNodeListTemplateTypeVisuels_sectionParams_20462181_cellBackgroundImage@iphone6plus.jpg"
           />
           <BlockLink
             title="Picture Starters"
             href="PictureStarters"
-            uri="https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_18035843_GBNodeListTemplateTypeVisuels_sectionParams_20462182_cellBackgroundImage@iphone6plus.jpg"
+            uri={require('../../assets/images/sections_18035843_GBNodeListTemplateTypeVisuels_sectionParams_20462182_cellBackgroundImage-iphone6plus.jpg')}
+            //uri="https://app.dare2sharelive.org/apiv3/release/iphone/11/photo/sections_18035843_GBNodeListTemplateTypeVisuels_sectionParams_20462182_cellBackgroundImage@iphone6plus.jpg"
           />
         </ScrollView>
       </View>

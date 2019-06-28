@@ -25,9 +25,7 @@ class BlockLink extends Component {
             //source={{
             // uri: this.props.uri
             //}}
-            source={{
-              uri: this.props.uri
-            }}
+            source={this.props.uri}
             style={{
               display: 'flex',
               height: getHeight(),
